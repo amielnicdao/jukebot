@@ -84,3 +84,25 @@ function omdb(movie) {
     console.log("Actors: " + response.data.Actors);
   });
 }
+
+function random() {
+  fs.readFile("random.txt", "utf8", function(error, data) {
+    if(error) {
+      return console.log(error);
+    }
+    console.log(data);
+
+    var randomTxt = data.split(",");
+    spotify(randomTxt[1]);
+  });
+};
+
+//add log.txt
+//make it pretty 
+//how many results?
+//for movie, are we supposed to console log "You should watch..."
+//the sign result is correct?
+//write readme
+//add screenshots/video
+//SUBMIT
+
