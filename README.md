@@ -57,7 +57,7 @@ You will need to install the following if you would like to make your own LIRI:
 
     **Example 3**: The `movie-this` command will log the movie's title, year it came out, IMDB and Rotten Tomatoes ratings, country where produced, language, plot, and actors. 
     
-        ```node liri.js movie-this '<name of movie>'```
+        node liri.js movie-this '<name of movie>'
 
     **No Input**
     ![Results](movie-this-no-input.PNG)
@@ -68,7 +68,7 @@ You will need to install the following if you would like to make your own LIRI:
 
     **Example 4**: The `do-what-it-says` command will take the text out of 'random.txt' and call one of Liri's commands. For this app, it will run ```spotify-this-song``` for "I Want It That Way" by the Backstreet Boys.
         
-        ```node liri.js 'do-what-it-says'```
+        node liri.js 'do-what-it-says'
 
     ![Results](do-what-it-says.PNG)
 
