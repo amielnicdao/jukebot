@@ -45,7 +45,7 @@ You will need to install the following if you would like to make your own LIRI:
 
     ![Results](concert-this.PNG)
 
-    **Example 2**: The `spotify-this-song` command will search songs and log a list of the artist, song name, preview link, and album. If no song is given, it will default to "The sign" by Ace of Base.
+    **Example 2**: The `spotify-this-song` command will search songs and log a list of the artist, song name, preview link, and album. If no song is given, it will default to "The Sign" by Ace of Base.
     
         node liri.js spotify-this-song '<name of song>'
 
@@ -53,6 +53,7 @@ You will need to install the following if you would like to make your own LIRI:
     ![Results](spotify-this-song-no-input.PNG)
 
     **With Input**
+
     ![Results](spotify-this-song-with-input.PNG)
 
     **Example 3**: The `movie-this` command will log the movie's title, year it came out, IMDB and Rotten Tomatoes ratings, country where produced, language, plot, and actors. 
@@ -60,6 +61,7 @@ You will need to install the following if you would like to make your own LIRI:
         node liri.js movie-this '<name of movie>'
 
     **No Input**
+    
     ![Results](movie-this-no-input.PNG)
 
     **With Input**
