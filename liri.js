@@ -37,9 +37,11 @@ function bandsInTown(artist) {
   axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
  
     .then(function (response) {
-      console.log("Venue: " + response.data[0].venue.name);
-      console.log("City: " + response.data[0].venue.city);
-      console.log("Date: " + moment(response.data[0].datetime).format("MM/DD/YYYY"));
+      for (i = 0; i < response.data.length; i++) {
+      console.log("Venue: " + response.data[i].venue.name);
+      console.log("City: " + response.data[i].venue.city);
+      console.log("Date: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+      };
     });
 }
 
@@ -56,11 +58,12 @@ function spotify(song) {
     if(err) {
       return console.log("Error occurred: " + err);
     }
-
-    console.log("Name: " + data.tracks.items[0].album.artists[0].name);
-    console.log("Song: " + data.tracks.items[0].name);
-    console.log("Preview: " + data.tracks.items[0].href);
-    console.log("Album: " + data.tracks.items[0].album.name);
+    for (i = 0; i < data.tracks.items.length; i++) {
+    console.log("Name: " + data.tracks.items[i].album.artists[0].name);
+    console.log("Song: " + data.tracks.items[i].name);
+    console.log("Preview: " + data.tracks.items[i].href);
+    console.log("Album: " + data.tracks.items[i].album.name);
+    }
   });
 }
 
@@ -73,7 +76,7 @@ function omdb(movie) {
   var movieQueryURL = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
   axios.request(movieQueryURL).then(function (response) {
-
+    // for (i = 0; i < response.data.length; i++) {
     console.log("Title: " + response.data.Title);
     console.log("Year Released: " + response.data.Year);
     console.log("IMDB Rating: " + response.data.imdbRating);
@@ -82,6 +85,7 @@ function omdb(movie) {
     console.log("Movie Language: " + response.data.Language);
     console.log("Plot: " + response.data.Plot);
     console.log("Actors: " + response.data.Actors);
+    // }
   });
 }
 
@@ -99,9 +103,7 @@ function random() {
 
 //add log.txt
 //make it pretty 
-//how many results?
-//for movie, are we supposed to console log "You should watch..."
-//the sign result is correct?
+//for loop for movie not working
 //write readme
 //add screenshots/video
 //SUBMIT
