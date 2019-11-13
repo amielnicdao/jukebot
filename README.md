@@ -39,24 +39,30 @@ You will need to install the following if you would like to make your own LIRI:
 1. Open your editor.
 2. Open `liri.js` file. 
 
-    **Example 1**: The `concert-this` command will search the Bands in Town Artist Events API log a list of the artist/band, venue name and location, and date of concert. 
+    **Example 1**: The `concert-this` command will search the Bands in Town Artist Events API and log a list of the artist/band, venue name and location, and date of concert. 
     
-        ```node liri.js concert-this '<artist/band name here>'```
+        node liri.js concert-this '<artist/band name here>'
 
     ![Results](concert-this.PNG)
 
     **Example 2**: The `spotify-this-song` command will search songs and log a list of the artist, song name, preview link, and album. If no song is given, it will default to "The sign" by Ace of Base.
     
-        ```node liri.js spotify-this-song '<name of song>'```
+        node liri.js spotify-this-song '<name of song>'
 
+    **No Input**
     ![Results](spotify-this-song-no-input.PNG)
+
+    **With Input**
     ![Results](spotify-this-song-with-input.PNG)
 
     **Example 3**: The `movie-this` command will log the movie's title, year it came out, IMDB and Rotten Tomatoes ratings, country where produced, language, plot, and actors. 
     
         ```node liri.js movie-this '<name of movie>'```
 
+    **No Input**
     ![Results](movie-this-no-input.PNG)
+
+    **With Input**
     ![Results](movie-this-with-input.PNG)
 
 
@@ -66,9 +72,11 @@ You will need to install the following if you would like to make your own LIRI:
 
     ![Results](do-what-it-says.PNG)
 
-## Authors
+## Created By
 
 * **Amiel Nicdao** [GitHub](https://github.com/amielnicdao/jukebot)
+
+**For node.js homework**
 
 ## Technologies
 
