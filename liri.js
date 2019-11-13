@@ -38,6 +38,7 @@ function bandsInTown(artist) {
  
     .then(function (response) {
       for (i = 0; i < response.data.length; i++) {
+      console.log("\x1b[96m***************************************\x1b[39m");
       console.log("Venue: " + response.data[i].venue.name);
       console.log("City: " + response.data[i].venue.city);
       console.log("Date: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
@@ -59,6 +60,7 @@ function spotify(song) {
       return console.log("Error occurred: " + err);
     }
     for (i = 0; i < data.tracks.items.length; i++) {
+    console.log("\x1b[96m***************************************\x1b[39m");
     console.log("Name: " + data.tracks.items[i].album.artists[0].name);
     console.log("Song: " + data.tracks.items[i].name);
     console.log("Preview: " + data.tracks.items[i].href);
@@ -75,8 +77,9 @@ function omdb(movie) {
 
   var movieQueryURL = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
-  axios.request(movieQueryURL).then(function (response) {
+  axios.get(movieQueryURL).then(function (response) {
     // for (i = 0; i < response.data.length; i++) {
+    console.log("\x1b[96m***************************************\x1b[39m");
     console.log("Title: " + response.data.Title);
     console.log("Year Released: " + response.data.Year);
     console.log("IMDB Rating: " + response.data.imdbRating);
@@ -85,6 +88,7 @@ function omdb(movie) {
     console.log("Movie Language: " + response.data.Language);
     console.log("Plot: " + response.data.Plot);
     console.log("Actors: " + response.data.Actors);
+    console.log("\x1b[96m***************************************\x1b[39m");
     // }
   });
 }
@@ -102,7 +106,6 @@ function random() {
 };
 
 //add log.txt
-//make it pretty 
 //for loop for movie not working
 //write readme
 //add screenshots/video
