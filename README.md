@@ -41,20 +41,20 @@ You will need to install the following if you would like to make your own LIRI:
 
     **Example 1**: The `concert-this` command will search the Bands in Town Artist Events API log a list of the artist/band, venue name and location, and date of concert. 
     
-        ```node liri.js concert-this '<artist/band name here>'```
+        node liri.js concert-this '<artist/band name here>'
 
     ![Results](concert-this.PNG)
 
     **Example 2**: The `spotify-this-song` command will search songs and log a list of the artist, song name, preview link, and album. If no song is given, it will default to "The sign" by Ace of Base.
     
-        ```node liri.js spotify-this-song '<name of song>'```
+        node liri.js spotify-this-song '<name of song>'
 
     ![Results](spotify-this-song-no-input.PNG)
     ![Results](spotify-this-song-with-input.PNG)
 
     **Example 3**: The `movie-this` command will log the movie's title, year it came out, IMDB and Rotten Tomatoes ratings, country where produced, language, plot, and actors. 
     
-        ```node liri.js movie-this '<name of movie>'```
+        node liri.js movie-this '<name of movie>'
 
     ![Results](movie-this-no-input.PNG)
     ![Results](movie-this-with-input.PNG)
@@ -62,7 +62,7 @@ You will need to install the following if you would like to make your own LIRI:
 
     **Example 4**: The `do-what-it-says` command will take the text out of 'random.txt' and call one of Liri's commands. For this app, it will run ```spotify-this-song``` for "I Want It That Way" by the Backstreet Boys.
         
-        ```node liri.js 'do-what-it-says'```
+        node liri.js 'do-what-it-says'
 
     ![Results](do-what-it-says.PNG)
 
